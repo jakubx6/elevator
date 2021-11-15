@@ -15,11 +15,11 @@ The program, after selecting the number of elevators, creates as many objects of
 - a queue structure, based on two set containers, to handle the queue for up and down travel.
 
 Elevator class methods:
-1. - Step - performs the simulation step;
-2. - Pickup - after providing input parameters (current floor number, target  floor number), selects an elevator to handle the request;
-3. - Request - after providing input parameters (elevator id, current floor number), adds the call to the queue of a specific elevator;
-4. - Update - after providing input parameters (elevator id, target floor number, direction of travel), changes these values for a specific elevator;
-5. - Status - displays the current status of all elevators, in order: elevator id, current floor value, target floor value, direction of travel.
+1. Step - performs the simulation step;
+2. Pickup - after providing input parameters (current floor number, target  floor number), selects an elevator to handle the request;
+3. Request - after providing input parameters (elevator id, current floor number), adds the call to the queue of a specific elevator;
+4. Update - after providing input parameters (elevator id, target floor number, direction of travel), changes these values for a specific elevator;
+5. Status - displays the current status of all elevators, in order: elevator id, current floor value, target floor value, direction of travel.
 
 Algorithm handling elevator selection for Pickup method:
 1. Select a free elevator to handle the call, break if yes;
