@@ -14,7 +14,7 @@ int main()
     while (n < 1 || n > 16) {
         cout << " Set correct amount of elevator cabs (1-16): ";
         cin >> n;
-        cout << "\n==========\n";
+        cout << "==========\n";
     }
 
     Elevator* e = (Elevator*)malloc(sizeof(Elevator) * n);
