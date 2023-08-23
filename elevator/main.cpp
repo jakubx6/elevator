@@ -62,7 +62,7 @@ int main()
             e->status(e, n);
             break;
         case 6:
-            delete e;
+            free(e);
             return 0;
         }
     }
