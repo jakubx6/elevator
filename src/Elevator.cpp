@@ -1,4 +1,6 @@
-#include "elevator.h"
+#include "Elevator.h"
+
+using std::cout;
 
 //Constructor
 Elevator::Elevator(u_int16_t id) {
@@ -10,7 +12,7 @@ Elevator::~Elevator(void) {
 };
 
 void Elevator::getStatus(void) {
-    std::cout << this->elevatorId << ". " << this->currentFloor << " " << this->targetFloor << " " << this->direction << std::endl;
+    cout<<this->elevatorId<<". "<<this->currentFloor<<" "<<this->targetFloor<<" "<<this->direction<<"\n";
 }
 
 void Elevator::makeStep(void) {
@@ -83,6 +85,6 @@ void Elevator::setTargetFloor(int16_t target) {
 }
 
 void Elevator::callError(int16_t err) {
-    std::cout << "callError " << err << std::endl;
+    cout<<"callError "<<err<<"\n";
     system("pause");
 }
